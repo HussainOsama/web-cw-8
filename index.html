@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZFQjUwOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRjdEMTM5OyIgZD0iTTMxOS4zMDYsMTMwLjMwNmwtMjQuMjM0LTIyLjIzNGwtNDIuNDg4LDM1Ljg0NUwyMDIuNTM4LDkzbC02LjI2OCwxMDEuMDQ5TDkzLDIwMi41MzkNCglsMTE2LjMyNCwxMTYuMzI0TDkzLDMyOS40NjJsMTgxLjg0NSwxODEuODQ1YzEyNi4zNjEtOS4xOTUsMjI3LjI2Ny0xMTAuMTAyLDIzNi40NjItMjM2LjQ2MkwzMjkuNDYyLDkzTDMxOS4zMDYsMTMwLjMwNnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwMDY2QUE7IiBkPSJNNDE5LDIwMi41Mzh2LTIwaC04OS41MzhWOTNoLTIwdjg5LjUzOEgyMDIuNTM4VjkzaC0yMHY4OS41MzlIOTN2MjBoODkuNTM4djEwNi45MjRIOTN2MjBoODkuNTM4DQoJVjQxOWgyMHYtODkuNTM4aDEwNi45MjRWNDE5aDIwdi04OS41MzhINDE5di0yMGgtODkuNTM4VjIwMi41MzhINDE5eiBNMzA5LjQ2MiwzMDkuNDYySDIwMi41MzhWMjAyLjUzOWgxMDYuOTI0VjMwOS40NjJ6Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojMUUyRDY0OyIgcG9pbnRzPSI0MTksMjAyLjUzOCA0MTksMTgyLjUzOCAzMjkuNDYyLDE4Mi41MzggMzI5LjQ2Miw5MyAzMDkuNDYyLDkzIDMwOS40NjIsMTgyLjUzOCANCgkyNTUuOTUyLDE4Mi41MzggMjU1Ljk1MiwyMDIuNTM4IDMwOS40NjIsMjAyLjUzOCAzMDkuNDYyLDMwOS40NjIgMjU1Ljk1MiwzMDkuNDYyIDI1NS45NTIsMzI5LjQ2MiAzMDkuNDYyLDMyOS40NjIgMzA5LjQ2Miw0MTkgDQoJMzI5LjQ2Miw0MTkgMzI5LjQ2MiwzMjkuNDYyIDQxOSwzMjkuNDYyIDQxOSwzMDkuNDYyIDMyOS40NjIsMzA5LjQ2MiAzMjkuNDYyLDIwMi41MzggIi8+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRjQ2ODI7IiBjeD0iMjU2IiBjeT0iMjU1IiByPSI0MCIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0M0MjM2NDsiIGQ9Ik0yNTYsMjE1Yy0wLjAxNiwwLTAuMDMyLDAuMDAxLTAuMDQ4LDAuMDAxdjc5Ljk5OGMwLjAxNiwwLDAuMDMxLDAuMDAxLDAuMDQ4LDAuMDAxDQoJYzIyLjA5MSwwLDQwLTE3LjkwOSw0MC00MFMyNzguMDkxLDIxNSwyNTYsMjE1eiIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzMzMzMzMzsiIHBvaW50cz0iMjk1LjA3MSwxMDguMDcxIDI4MC45MjksOTMuOTI5IDI1NiwxMTguODU3IDIzMS4wNzEsOTMuOTI5IDIxNi45MjksMTA4LjA3MiAyNDEuODU3LDEzMyANCgkyMTYuOTI5LDE1Ny45MjkgMjMxLjA3MSwxNzIuMDcxIDI1NiwxNDcuMTQzIDI4MC45MjksMTcyLjA3MiAyOTUuMDcxLDE1Ny45MjkgMjcwLjE0MiwxMzMgIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMUExQTFBOyIgcG9pbnRzPSIyNTYsMTQ3LjE0MyAyODAuOTI5LDE3Mi4wNzIgMjk1LjA3MSwxNTcuOTI5IDI3MC4xNDIsMTMzIDI5NS4wNzEsMTA4LjA3MSAyODAuOTI5LDkzLjkyOSANCgkJMjU2LDExOC44NTcgCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMxQTFBMUE7IiBwb2ludHM9IjQyMC4zMjIsMjgxLjE3OSAzOTUuMzkzLDI1Ni4yNSA0MjAuMzIxLDIzMS4zMjEgNDA2LjE3OSwyMTcuMTc5IDM4MS4yNSwyNDIuMTA4IA0KCQkzNTYuMzIxLDIxNy4xNzkgMzQyLjE3OSwyMzEuMzIyIDM2Ny4xMDgsMjU2LjI1IDM0Mi4xNzksMjgxLjE3OSAzNTYuMzIxLDI5NS4zMjIgMzgxLjI1LDI3MC4zOTMgNDA2LjE4LDI5NS4zMjIgCSIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>XO Game</title>
-  </head>
+<html lang="en" dir="ltr">
 
-  <body>
-    <h2>تمرين ٨</h2>
-    <div class="rotate">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon"
+    href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZFQjUwOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRjdEMTM5OyIgZD0iTTMxOS4zMDYsMTMwLjMwNmwtMjQuMjM0LTIyLjIzNGwtNDIuNDg4LDM1Ljg0NUwyMDIuNTM4LDkzbC02LjI2OCwxMDEuMDQ5TDkzLDIwMi41MzkNCglsMTE2LjMyNCwxMTYuMzI0TDkzLDMyOS40NjJsMTgxLjg0NSwxODEuODQ1YzEyNi4zNjEtOS4xOTUsMjI3LjI2Ny0xMTAuMTAyLDIzNi40NjItMjM2LjQ2MkwzMjkuNDYyLDkzTDMxOS4zMDYsMTMwLjMwNnoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiMwMDY2QUE7IiBkPSJNNDE5LDIwMi41Mzh2LTIwaC04OS41MzhWOTNoLTIwdjg5LjUzOEgyMDIuNTM4VjkzaC0yMHY4OS41MzlIOTN2MjBoODkuNTM4djEwNi45MjRIOTN2MjBoODkuNTM4DQoJVjQxOWgyMHYtODkuNTM4aDEwNi45MjRWNDE5aDIwdi04OS41MzhINDE5di0yMGgtODkuNTM4VjIwMi41MzhINDE5eiBNMzA5LjQ2MiwzMDkuNDYySDIwMi41MzhWMjAyLjUzOWgxMDYuOTI0VjMwOS40NjJ6Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojMUUyRDY0OyIgcG9pbnRzPSI0MTksMjAyLjUzOCA0MTksMTgyLjUzOCAzMjkuNDYyLDE4Mi41MzggMzI5LjQ2Miw5MyAzMDkuNDYyLDkzIDMwOS40NjIsMTgyLjUzOCANCgkyNTUuOTUyLDE4Mi41MzggMjU1Ljk1MiwyMDIuNTM4IDMwOS40NjIsMjAyLjUzOCAzMDkuNDYyLDMwOS40NjIgMjU1Ljk1MiwzMDkuNDYyIDI1NS45NTIsMzI5LjQ2MiAzMDkuNDYyLDMyOS40NjIgMzA5LjQ2Miw0MTkgDQoJMzI5LjQ2Miw0MTkgMzI5LjQ2MiwzMjkuNDYyIDQxOSwzMjkuNDYyIDQxOSwzMDkuNDYyIDMyOS40NjIsMzA5LjQ2MiAzMjkuNDYyLDIwMi41MzggIi8+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiNGRjQ2ODI7IiBjeD0iMjU2IiBjeT0iMjU1IiByPSI0MCIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0M0MjM2NDsiIGQ9Ik0yNTYsMjE1Yy0wLjAxNiwwLTAuMDMyLDAuMDAxLTAuMDQ4LDAuMDAxdjc5Ljk5OGMwLjAxNiwwLDAuMDMxLDAuMDAxLDAuMDQ4LDAuMDAxDQoJYzIyLjA5MSwwLDQwLTE3LjkwOSw0MC00MFMyNzguMDkxLDIxNSwyNTYsMjE1eiIvPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzMzMzMzMzsiIHBvaW50cz0iMjk1LjA3MSwxMDguMDcxIDI4MC45MjksOTMuOTI5IDI1NiwxMTguODU3IDIzMS4wNzEsOTMuOTI5IDIxNi45MjksMTA4LjA3MiAyNDEuODU3LDEzMyANCgkyMTYuOTI5LDE1Ny45MjkgMjMxLjA3MSwxNzIuMDcxIDI1NiwxNDcuMTQzIDI4MC45MjksMTcyLjA3MiAyOTUuMDcxLDE1Ny45MjkgMjcwLjE0MiwxMzMgIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMUExQTFBOyIgcG9pbnRzPSIyNTYsMTQ3LjE0MyAyODAuOTI5LDE3Mi4wNzIgMjk1LjA3MSwxNTcuOTI5IDI3MC4xNDIsMTMzIDI5NS4wNzEsMTA4LjA3MSAyODAuOTI5LDkzLjkyOSANCgkJMjU2LDExOC44NTcgCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMxQTFBMUE7IiBwb2ludHM9IjQyMC4zMjIsMjgxLjE3OSAzOTUuMzkzLDI1Ni4yNSA0MjAuMzIxLDIzMS4zMjEgNDA2LjE3OSwyMTcuMTc5IDM4MS4yNSwyNDIuMTA4IA0KCQkzNTYuMzIxLDIxNy4xNzkgMzQyLjE3OSwyMzEuMzIyIDM2Ny4xMDgsMjU2LjI1IDM0Mi4xNzksMjgxLjE3OSAzNTYuMzIxLDI5NS4zMjIgMzgxLjI1LDI3MC4zOTMgNDA2LjE4LDI5NS4zMjIgCSIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <title>XO Game</title>
+</head>
+
+<body>
+  <h2>تمرين ٨</h2>
+  <div class="rotate">
+    <h1>X</h1>
+    <h1>O</h1>
+  </div>
+  <div style="display: flex; justify-content: space-between">
+    <div class="rotate rotate-column">
       <h1>X</h1>
       <h1>O</h1>
     </div>
-    <div style="display: flex; justify-content: space-between">
-      <div class="rotate rotate-column">
-        <h1>X</h1>
-        <h1>O</h1>
-      </div>
-      <!--
+    <!--
 
       00 | 01 | 02
       --   --   --
@@ -31,34 +43,77 @@
       20 | 21 | 22
 
      -->
-      <div class="board">
-        <table>
-          <tr>
-            <td onclick="press('02')"></td>
-            <td onclick="press('01')" class="v"></td>
-            <td onclick="press('00')"></td>
-          </tr>
-          <tr>
-            <td onclick="press('12')" class="h"></td>
-            <td onclick="press('11')" class="v h"></td>
-            <td onclick="press('10')" class="h"></td>
-          </tr>
-          <tr>
-            <td onclick="press('22')"></td>
-            <td onclick="press('21')" class="v"></td>
-            <td onclick="press('20')"></td>
-          </tr>
-        </table>
+    <div class="board">
+      <table>
+        <tr>
+          <td onclick="press(0,2),playAudio()" id="02"></td>
+          <td onclick="press(0,1), playAudio()" class="v" id="01"></td>
+          <td onclick="press(0,0), playAudio()" id="00"></td>
+        </tr>
+        <tr>
+          <td onclick="press(1,2), playAudio()" class="h" id="12"></td>
+          <td onclick="press(1,1), playAudio()" class="v h" id="11"></td>
+          <td onclick="press(1,0), playAudio()" class="h" id="10"></td>
+        </tr>
+        <tr>
+          <td onclick="press(2,2), playAudio()" id="22"></td>
+          <td onclick="press(2,1), playAudio()" class="v" id="21"></td>
+          <td onclick="press(2,0), playAudio()" id="20"></td>
+        </tr>
+      </table>
+      <h1 id="winner">The winner is</h1>
+      <button type="button" class="btn btn-warning" onclick="reset()">Reset</button>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+        تعليمات
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">التعليمات</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3 dir="rtl">انت راح تلعب X و الكمبيوتر O</h3>
+              <h3 dir="rtl">إذا بتعيد القيم اضغط Reset</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="rotate rotate-column">
-        <h1>X</h1>
-        <h1>O</h1>
-      </div>
+
+      <audio id="myAudio">
+        <source src="./zapsplat_multimedia_cell_phone_smart_screen_button_press_click_feedback_001_60930.mp3"
+          type="audio/ogg">
+      </audio>
+
+      <audio id="myAudio2">
+        <source src="./zapsplat_multimedia_cell_phone_smart_screen_button_press_click_feedback_003_60932.mp3"
+          type="audio/ogg">
+      </audio>
+
+
+
     </div>
-    <div class="rotate">
-      <h1>O</h1>
+    <div class="rotate rotate-column">
       <h1>X</h1>
+      <h1>O</h1>
     </div>
-    <script src="./myscript.js"></script>
-  </body>
+  </div>
+  <div class="rotate">
+    <h1>O</h1>
+    <h1>X</h1>
+  </div>
+  <script src="./myscript.js"></script>
+</body>
+
 </html>
